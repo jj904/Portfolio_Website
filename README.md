@@ -18,6 +18,6 @@ python manage.py runserver
 ```
 Access http://127.0.0.1:8000/ in the browser
 
-<br><br><br>
+<br><br>
 ### Reference
 bootstrapmade : https://bootstrapmade.com/
