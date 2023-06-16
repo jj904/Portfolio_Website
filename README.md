@@ -16,8 +16,8 @@ pip install django
 ```
 python manage.py runserver
 ```
+Access http://127.0.0.1:8000/ in the browser
 
-http://127.0.0.1:8000/
 
 ### Reference
 bootstrapmade : https://bootstrapmade.com/
