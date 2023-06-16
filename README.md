@@ -12,11 +12,12 @@ source myvenv/bin/activate
 ```
 pip install django
 ```
-#### 3. Run th program
+#### 3. Run the program
 ```
 python manage.py runserver
 ```
 
+http://127.0.0.1:8000/
 
 ### Reference
 bootstrapmade : https://bootstrapmade.com/
