@@ -609,16 +609,18 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  text-align: center;
-  padding: 20px 20px;
+  /*text-align: center;*/
+  padding: 3px 3px; 
   transition: all ease-in-out 0.3s;
   background: #fff;
+  /* width: 500px;
+  height: 100px; */
 }
 
 .services .icon-box .icon {
   margin: 0 auto;
-  width: 80px;
-  height: 80px;
+  width: 500px;
+  height: 40px;
   border-radius: 80px;
   border: 1px solid black;
   display: flex;
@@ -646,7 +648,7 @@ section {
 
 .services .icon-box p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 20px;
   margin-bottom: 0;
 }
 
