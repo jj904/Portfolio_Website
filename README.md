@@ -5,7 +5,6 @@
 ## Start with
 #### 1. Setting environment 
 ```
-python -m venv myvenv
 source myvenv/bin/activate 
 ```
 #### 2. Install django inside the project
