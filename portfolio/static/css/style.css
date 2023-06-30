@@ -366,7 +366,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 20vh;
-  background: url("../img/hero-bg.jpg") center center;
+  background: url("../img/sky.jpg") center center;
   background-size: cover;
   position: relative;
 }
@@ -377,7 +377,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -518,7 +517,7 @@ section {
 .about .content h3 {
   font-weight: 500;
   line-height: 32px;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .about .content ul {
@@ -543,6 +542,16 @@ section {
   margin-bottom: 0;
 }
 
+.about .testimonial-item {
+  box-sizing: content-box;
+  padding: 30px 30px 0 30px;
+  margin: 30px 15px;
+  text-align: left;
+  min-height: 350px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -553,7 +562,7 @@ section {
 }
 
 .counts .counters span {
-  font-size: 36px;
+  font-size: 40px;
   display: block;
   font-weight: 700;
 }
@@ -796,7 +805,7 @@ section {
   box-sizing: content-box;
   padding: 30px 30px 0 30px;
   margin: 30px 15px;
-  text-align: center;
+  text-align: left;
   min-height: 350px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   background: #fff;
@@ -844,6 +853,10 @@ section {
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 auto 15px auto;
+}
+
+.testimonials .testimonial-item courses {
+  text-align: left;
 }
 
 .testimonials .owl-nav, .testimonials .owl-dots {

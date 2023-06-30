@@ -51,7 +51,7 @@
           <ul>
             <li class="active"><a href="#header">Home</a></li>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#services">Education</a></li>
+            <li><a href="#testimonials">Education</a></li>
             <li><a href="#portfolio">project</a></li>
             <li><a href="#contact">Contact</a></li>
 
@@ -76,7 +76,6 @@
         <div class="row content">
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
             <h2>About Me</h2>
-
               <div class="col-lg-6">
                 <div class="member" data-aos="zoom-in" data-aos-delay="100">
                   <div class="pic"><img src="{% static '/img/team/team-1.jpg'%}" class="img-fluid" alt=""></div>
@@ -88,29 +87,74 @@
                     <div class="social">
                       <a href="https://github.com/jj904"> Github <i class="ri-github-fill"></i></a>
                       <a href="https://www.linkedin.com/in/gaeun-jung-00632217a/"> LinkedIn <i class="ri-linkedin-box-fill"></i> </a>
+                      <br />
+                      <br />
                     </div> 
 
                   </div>
                 </div>
               </div> 
-
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200">
-            <p>
-              코라 커피는 5성 호텔과 세계 바리스타 대회 수상자 출신들로 구성된,<br/>
-              한국 최고의 브런치 카페입니다. 브라질, 와칸다, 아스가르드에서 직수입한 <br/>
-              원두를 100년간 숙성시켜 만든 고품격의 커피와 브런치를 집과 카페 모두에서 즐겨보세요.
-            </p>
-            <ul>
-              코라 커피는 5성 호텔과 세계 바리스타 대회 수상자 출신들로 구성된,<br/>
-              한국 최고의 브런치 카페입니다. 브라질, 와칸다, 아스가르드에서 직수입한 <br/>
-              원두를 100년간 숙성시켜 만든 고품격의 커피와 브런치를 집과 카페 모두에서 즐겨보세요.
-            </ul>
-          </div>
+          <div class="testimonial-item"> 
+          <p>
+            Hi, I have a constant passion and curiosity for software development. Through the major in software engineering, learned the skills and concepts needed in software engineering. 
+            <br/>
+            <br/>
+            Through the experience of carrying out projects using programming and frameworks learned through various programming courses, I learned to utilize interpersonal skills and problem-solving skills.
+          </p>
         </div>
-
+        </div>
       </div>
     </section><!-- End About Section -->
+
+
+    <!-- ======= Education Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+        <div class="section-title" data-aos="fade-left">
+          <h2>Education Background</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-title" data-aos="fade-right">
+              <div class="testimonial-item">
+                <img src="{% static '/img/logo.jpg'%}" class="testimonial-img" alt="">
+
+                <h3>San José State University</h3> <br>
+                <p>B.S Software Engineering<br>Graducation: May, 2023</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                    <h4>Courses</h4>         
+                      <ul id="courses">
+                            <p>Intro Database Management(MySQL)</p>
+                            <p>Data Structures and Algorithms(Java)</p>
+                            <p>Object-Oriented Design(Java)</p>
+                            <p>Intro Database Management(MySQL)</p>
+                            <p>Operating System(C)</p>
+                            <p>Computer Organization and Architecture(C)</p>
+                            <p>Server-Side Web Programming(PHP, MySQL)</p>
+                            <p>Introduction to Artificial Intelligence(Python)</p>
+                            <p>Software Quality Engineering(Java)</p>
+                            <p>Enterprise Software Platforms(Java, SQL, JDBC, HTTP, Docker, Spring boot)</p>
+                      </ul>      
+                  </div> 
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </section><!-- End Education Section -->
+
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -152,8 +196,8 @@
             <div class="portfolio-wrap">
               <img src="{% static '/img/portfolio/portfolio-2.jpg'%}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>APP 2</h4>
-                <p>App</p>
+                <h4>Spliity</h4>
+                <p>Desktop Based App(Java)</p>
                 <div class="portfolio-links">
                   <a href="{% static '/img/portfolio/portfolio-2.jpg'%}" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
                   <a href="{% url 'detail2' %}" title="More Details"><i class="bx bx-link"></i></a>
@@ -166,8 +210,8 @@
             <div class="portfolio-wrap">
               <img src="{% static '/img/portfolio/portfolio-3.jpg'%}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
+                <h4>Simple Project</h4>
+                <p>Multiple simple Projects</p>
                 <div class="portfolio-links">
                   <a href="{% static '/img/portfolio/portfolio-3.jpg'%}" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
                   <a href="{% url 'detail3' %}" title="More Details"><i class="bx bx-link"></i></a>
@@ -225,57 +269,6 @@
                   </div>
                 </div>
               </div> -->
-    
-
-    <!-- ======= Education Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
-        <div class="section-title" data-aos="fade-left">
-          <h2>Education Background</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="section-title" data-aos="fade-right">
-              <div class="testimonial-item">
-                <img src="{% static '/img/logo.jpg'%}" class="testimonial-img" alt="">
-
-                <h3>San José State University</h3> <br>
-                <p>B.S Software Engineering<br>Graducation: May, 2023</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                    <h4>Courses</h4>
-               
-                      <ul id="courses">
-                            <p>Intro Database Management(MySQL)</p>
-                            <p>Data Structures and Algorithms(Java)</p>
-                            <p>Object-Oriented Design(Java)</p>
-                            <p>Intro Database Management(MySQL)</p>
-                            <p>Operating System(C)</p>
-                            <p>Computer Organization and Architecture(C)</p>
-                            <p>Server-Side Web Programming(PHP, MySQL)</p>
-                            <p>Introduction to Artificial Intelligence(Python)</p>
-                            <p>Software Quality Engineering(Java)</p>
-                            <p>Enterprise Software Platforms(Java, SQL, JDBC, HTTP, Docker, Spring boot)</p>
-                      </ul>      
-                  </div> 
-                </div>
-              </div> -->
-              <!-- End testimonial item -->
-
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </div>
-
-      </div>
-    </section><!-- End Education Section -->
-
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
