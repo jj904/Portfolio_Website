@@ -14,7 +14,7 @@ SECRET_KEY = '5y&d9=!eg1q08!feexw)6cn#zy_3w9%sc7=&!*8j%-(cm1yrk_'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    # 'jgaeun904.pythonanywhere.com'
+   # 'jgaeun904.pythonanywhere.com'
 ]
 
 
