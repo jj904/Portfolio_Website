@@ -21,4 +21,6 @@ def detail4(request):
 def detail5(request):
     return render(request, 'portfolio-details5.html')
 
+def detail6(request):
+    return render(request, 'portfolio-details6.html')
 
