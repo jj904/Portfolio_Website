@@ -15,6 +15,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
    # 'jgaeun904.pythonanywhere.com'
+    '.vercel.app'
 ]
 
 
