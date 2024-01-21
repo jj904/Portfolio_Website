@@ -3,8 +3,8 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'index.html')
 
-def detail(request):
-    return render(request, 'portfolio-details.html')
+# def detail(request):
+#     return render(request, 'portfolio-details.html')
 
 def detail1(request):
     return render(request, 'portfolio-details1.html')

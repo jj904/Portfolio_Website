@@ -7,6 +7,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...YOUR_INTEGRITY_CODE_HERE..." crossorigin="anonymous" />
   
   <title>Gaeun's Portfolio</title>
   <meta content="" name="description">
@@ -14,6 +15,7 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
   <!-- Vendor CSS Files -->
   <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
@@ -49,13 +51,11 @@
 
         <nav class="nav-menu d-none d-lg-block">
           <ul>
-            <li class="active"><a href="#header">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#testimonials">Education</a></li>
-            <li><a href="#portfolio">project</a></li>
+            <li class="active"><a href="#header"><i class="fas fa-home" style="font-size: 20px;"></i></a></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#testimonials">RESUME</a></li>
+            <li><a href="#portfolio">PROJECT</a></li>
             <li><a href="#contact">Contact</a></li>
-
-            <!-- <li class="get-started"><a href="#about">Get Started</a></li> -->
           </ul>
         </nav><!-- .nav-menu -->
       </div><!-- End Header Container -->
@@ -68,13 +68,54 @@
     </div>
   </section><!-- End Hero -->
 
-  <main id="main">
+  <main>
+  <!-- ======= AboutMe Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title" data-aos="fade-left">
+          <h2>About Me</h2>
+          <div class="testimonial-item">
+            <div class="row">
+              <div class="col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member">
+                  <div class="pic"><img src="{% static '/img/team/team-1.jpg'%}" class="img-fluid" alt="" style="width: 190px; height: 240px; margin-left: 10px"></div>
+                  <h4 style="font-size: 22px; margin-left: 30px; margin-top: 10px; margin-bottom: 20px;">Gaeun Jung</h4> <!-- Adjusted font size and added margin-left -->
+                </div>
+              </div>
+             
+              <!--Paragraph Start-->
+              <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+                <div class="member-info">
+                  <br />
+                    <!-- <p style="margin-top: 2px;"> -->
+                    <p>
+                    Hello! I majored in Software Engineering driven by a constant passion and curiosity for software development. 
+                    Through various programming courses, projects, and participation in hackathons, 
+                    I have enhanced my teamwork and problem-solving skills. 
+                    <br/>
+                    These experiences have equipped me to creatively and efficiently tackle diverse challenges, 
+                    while my involvement in club activities has strengthened my communication and leadership abilities.
+                    <br/>
+                    <br/>
+                    I aspire to create practical and innovative software solutions and contribute to the success of a team. 
+                    I would appreciate it if you could explore more details in my portfolio.<br>Thank you! <br/>
+                    </p>
+                  </div>
+                  <!--Paragraph End-->
+                </div>
 
-
-    <!-- ======= Portfolio Section ======= -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- End AboutMe Section -->
+    
+  <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container">
-
         <div class="section-title" data-aos="fade-left">
           <h2>Project & Awards </h2>
           <p>Projects and Extra-curricular activities</p>
@@ -92,12 +133,12 @@
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
+          <!--portfolio #1-->
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="{% static '/img/portfolio/portfolio-1.jpg'%}" class="img-fluid" alt="">
+              <img src="{% static '/img/portfolio/portfolio-1.jpg'%}" class="img-fluid" alt="" style="width: 400px; height: 270px;">
               <div class="portfolio-info">
-                <h4>4 PET</h4>
+                <h4>4PET</h4>
                 <p>Senior Project</p>
                 <div class="portfolio-links">
                   <a href="{% static '/img/portfolio/portfolio-1.jpg'%}" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
@@ -106,12 +147,12 @@
               </div>
             </div>
           </div>
-
+           <!--portfolio #2-->
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="{% static '/img/portfolio/portfolio-2.jpg'%}" class="img-fluid" alt="">
+              <img src="{% static '/img/portfolio/portfolio-2.jpg'%}" class="img-fluid" alt="" style="width: 400px; height: 270px;">
               <div class="portfolio-info">
-                <h4>Spliity</h4>
+                <h4>SPLIITY</h4>
                 <p>Desktop Based App(Java)</p>
                 <div class="portfolio-links">
                   <a href="{% static '/img/portfolio/portfolio-2.jpg'%}" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
@@ -120,12 +161,12 @@
               </div>
             </div>
           </div>
-
+           <!--portfolio #3-->
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="{% static '/img/portfolio/portfolio-3.jpg'%}" class="img-fluid" alt="">
+              <img src="{% static '/img/portfolio/portfolio-3.jpg'%}" class="img-fluid" alt="" style="width: 400px; height: 270px;">
               <div class="portfolio-info">
-                <h4>Simple Project</h4>
+                <h4>SIMPLE PROJECT</h4>
                 <p>Multiple simple Projects</p>
                 <div class="portfolio-links">
                   <a href="{% static '/img/portfolio/portfolio-3.jpg'%}" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
@@ -134,12 +175,12 @@
               </div>
             </div>
           </div>
-
+          <!--portfolio #4-->
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="{% static '/img/portfolio/portfolio-4.jpg'%}" class="img-fluid" alt="">
+              <img src="{% static '/img/portfolio/portfolio-4.jpg'%}" class="img-fluid" alt="" style="width: 400px; height: 270px;">
               <div class="portfolio-info">
-                <h4>Hackerton</h4>
+                <h4>HACKATHON</h4>
                 <p>by Hyundai Cradle</p>
                 <div class="portfolio-links">
                   <a href="{% static '/img/portfolio/portfolio-4.jpg'%}" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
@@ -148,10 +189,10 @@
               </div>
             </div>
           </div>
-
+           <!--portfolio #5-->
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="{% static '/img/portfolio/portfolio-5.jpg'%}" class="img-fluid" alt="">
+              <img src="{% static '/img/portfolio/portfolio-5.jpg'%}" class="img-fluid" alt="" style="width: 400px; height:270px;">
               <div class="portfolio-info">
                 <h4>LIKELION</h4>
                 <p>Coding Club</p>
@@ -162,10 +203,10 @@
               </div>
             </div>
           </div>
-
+           <!--portfolio #6-->
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="{% static '/img/portfolio/portfolio-6.jpg'%}" class="img-fluid" alt="">
+              <img src="{% static '/img/portfolio/portfolio-6.jpg'%}" class="img-fluid" alt="" style="width: 400px; height: 270px;">
               <div class="portfolio-info">
                 <h4>SUEL.</h4>
                 <p>Social App</p>
@@ -182,179 +223,108 @@
     </section><!-- End Portfolio Section -->
 
 
-    <!-- ======= Work Experience Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
-        <div class="section-title" data-aos="fade-left">
-          <h2>Work Experience</h2>
-        </div>
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                    <h4>LG Solution Partner, LLC (LSP)</h4>  
-                    <p>Entry level software developer, in TN <br>Oct 2023 -Current</p>       
-                      <ul id="courses">                    
-                        <p>&#x2022; Discovered the quality and consistency of battery materials, troubleshooting was conducted by determining whether the machine was malfunctioning</p>
-                        <p>&#x2022; Learned the characteristics of the machines in the electrode process in the setting stage</p>
-                        <p>&#x2022; Analyzed of errors in the technical defects of the machine taken from vision equipment</p>
-                      </ul>      
-                  </div> 
-                </div>
-              </div>
-              <!-- End work experience item -->
+    <!-- ======= Resume Section ======= -->
+<section id="testimonials" class="testimonials section-bg">
+  <div class="container">
+    <div class="section-title" data-aos="fade-left">
+      <h2>Resume</h2>
+    </div>
 
-            </div>
-            <div class="swiper-pagination"></div>
+    <div class="row">
+      <!-- Work Experience Section -->
+      <div class="col-lg-8 work-experience" data-aos="fade-up" data-aos-delay="100">
+        <h4>Work Experience</h4>
+        <p style="font-size: 18px; font-weight: bold; margin-top: 10px;">LG Solution Partner, LLC</p>
+        <p>Entry-level software developer, in TN <br>Oct 2023 - Current</p>
+        <ul id="courses">
+          <p style="font-size: 16px;">
+          <li>Discovered the quality and consistency of battery materials, troubleshooting was conducted<br>by determining whether the machine was malfunctioning</li>
+          <li>Improved the suitability of vision inspection equipment through parameter adjustments,<br>thereby contributing to the reduction of issues within the production process</li>
+         </p>
+        </ul>
+      </div>
+      <!-- Work Experience Section End -->
+
+      <!-- Education Section -->
+      <div class="col-lg-4 work-experience" data-aos="fade-up" data-aos-delay="100" >
+        <!-- <div class="testimonial-item"> -->
+          <h4>Education</h4>
+          <img src="{% static '/img/logo.jpg'%}" class="testimonial-img" alt="" style="width: 60px; height: 60px; margin-right: 10px; margin-top: 2px;">
+          <div>
+            <p style="font-size: 18px; font-weight: bold; margin-top: 10px;">San José State University</p>
+            <p style="font-size: 16px;">B.S Software Engineering<br>Graduation: May, 2023</p>
+            <p style="font-size: 14px;"><i class='fas fa-map-marker-alt' style='font-size:14px'></i> San Jose, CA</p>
           </div>
         </div>
       </div>
+      <!-- Education Section End -->
 
-      </div>
-    </section><!-- End Education Section -->
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section><!-- Resume Section End -->
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="row content">
-          <div class="col-lg-8" data-aos="fade-right" data-aos-delay="100">
-            <h2>About Me</h2>
-            <section class="testimonial-item"> 
-              <div class="col-lg-6">
-                <div class="member" data-aos="zoom-in" data-aos-delay="100">
-                  <div class="pic"><img src="{% static '/img/team/team-1.jpg'%}" class="img-fluid" alt=""></div>
-                  <div class="member-info">
-                    <h3>Gaeun Jung</h3>
-                    <span>Software Engineer</span>
-                    <p>San Jose, CA</p>
-  
-                    <div class="social">
-                      <a href="https://github.com/jj904"> Github <i class="ri-github-fill"></i></a>
-                      <a href="https://www.linkedin.com/in/gaeun-jung-00632217a/"> LinkedIn <i class="ri-linkedin-box-fill"></i> </a>
-                      <br />
-                      <br />
-                    </div> 
-                    <div data-aos="fade-left" data-aos-delay="200">
-                      <!-- <div class="testimonial-item">   -->
-                        <p>
-                          Hi, I have a constant passion and curiosity for software development. Through the major in software engineering, learned the skills and concepts needed in software engineering. 
-                          <br/>
-                          <br/>
-                          Through the experience of carrying out projects using programming and frameworks learned through various programming courses, I learned to utilize interpersonal skills and problem-solving skills.
-                          <br/>
-                          <br/>
-                        </p>
-                      <!-- </div> -->
-                    </div>
-                    
-                  </div>
-                </div>
-              </div> 
-            </div>
-          </div>
-      </div>
-    </section>
-    </section><!-- End About Section -->
-
-    <!-- ======= Education Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
-        <div class="section-title" data-aos="fade-left">
-          <h2>Education Background</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="section-title" data-aos="fade-right">
-              <div class="testimonial-item">
-                <img src="{% static '/img/logo.jpg'%}" class="testimonial-img" alt="">
-
-                <h3>San José State University</h3> <br>
-                <p>B.S Software Engineering<br>Graducation: May, 2023</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                    <h4>Courses Info</h4>         
-                      <ul id="courses">
-                        <br />
-                            <p>Intro Database Management(MySQL)</p>
-                            <p>Data Structures and Algorithms(Java)</p>
-                            <p>Object-Oriented Design(Java)</p>
-                            <p>Intro Database Management(MySQL)</p>
-                            <p>Operating System(C)</p>
-                            <p>Computer Organization and Architecture(C)</p>
-                            <p>Server-Side Web Programming(PHP, MySQL)</p>
-                            <p>Introduction to Artificial Intelligence(Python)</p>
-                            <p>Software Quality Engineering(Java)</p>
-                            <p>Enterprise Software Platforms(Java, SQL, JDBC, HTTP, Docker, Spring boot)</p>
-                            <br /> <br />
-                      </ul>      
-                  </div> 
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </div>
-
-      </div>
-    </section><!-- End Education Section -->
-
-    <!-- ======= Team Section ======= -->
-              <!-- <div class="col-lg-6">
-                <div class="member" data-aos="zoom-in" data-aos-delay="100">
-                  <div class="pic"><img src="{% static '/img/team/team-1.jpg'%}" class="img-fluid" alt=""></div>
-                  <div class="member-info">
-                    <h4>Walter White</h4>
-                    <span>Chief Executive Officer</span>
-                    <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                    <div class="social">
-                      <a href=""><i class="ri-twitter-fill"></i></a>
-                      <a href=""><i class="ri-facebook-fill"></i></a>
-                      <a href=""><i class="ri-instagram-fill"></i></a>
-                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
+          <div class="section-title" data-aos="fade-right">
             <div class="sec tion-title">
               <h2>Contact Me</h2>
             </div>
           </div>
-
+          
+          <!--Email-->
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
             <div class="row">
               <div class="col-lg-6 mt-4">
                 <div class="info">
                   <i class="icofont-envelope"></i>
                   <h4>Email:</h4>
-                  <p>jgaeun904@gmail.com</p>
+                  <p style="font-size: 22px;">jgaeun904@gmail.com</p>
                 </div>
               </div>
+                <!--contact-->
+                <div class="col-lg-6">
+                  <div class="info w-100 mt-4">
+                    <i class="icofont-phone"></i>
+                    <h4>Contact:</h4>
+                    <p style="font-size: 22px;">+1 408-690-5518</p>
+                  </div>
+                </div> 
+                <!-- GitHub -->
+                <div class="col-lg-6">
+                  <div class="info mt-4">
+                      <i class="icofont-github"></i>
+                      <h4><a href="https://github.com/jj904">GitHub</a></h4>
+                  </div>
+              </div>
+              <!-- LinkedIn -->
               <div class="col-lg-6">
-                <div class="info w-100 mt-4">
-                  <i class="icofont-phone"></i>
-                  <h4>Contact:</h4>
-                  <p>+1 408-690-5518</p>
-                </div>
+                  <div class="info mt-4">
+                      <i class="icofont-linkedin"></i>
+                      <h4> <a href="https://www.linkedin.com/in/gaeun-jung-00632217a/">LinkedIn</a></h4>
+                  </div>
               </div>
+ 
+
+
             </div>
           </div>
         </div>
-
+  
       </div>
     </section><!-- End Contact Section -->
+
+    <!-- ======= Team Section ======= -->
+
+                    <!-- <div class="social">
+                      <a href=""><i class="ri-twitter-fill"></i></a>
+                      <a href=""><i class="ri-facebook-fill"></i></a>
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div> -->
 
   </main><!-- End #main -->
 
